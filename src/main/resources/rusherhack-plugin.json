@@ -1,5 +1,5 @@
 {
-  "Plugin-Class": "me.eonexe.ExamplePlugin",
+  "Plugin-Class": "me.eonexe.NoWalkAnimationPlugin",
   "Name": "NoWalkAnimations",
   "Version": "0.1.0",
   "Description": "Rusher plugin to disable the walking animation!",

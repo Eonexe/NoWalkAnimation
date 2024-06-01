@@ -22,7 +22,7 @@ public class NoWalkAnimationPlugin extends Plugin {
 	
 	@Override
 	public void onUnload() {
-		this.getLogger().info("Example plugin unloaded!");
+		this.getLogger().info("Walk Animation plugin unloaded!");
 	}
 	
 }

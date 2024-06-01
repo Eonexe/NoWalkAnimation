@@ -7,6 +7,7 @@ import org.rusherhack.client.api.RusherHackAPI;
 import org.rusherhack.client.api.events.client.EventUpdate;
 import org.rusherhack.client.api.events.render.EventRender2D;
 import org.rusherhack.client.api.events.render.EventRender3D;
+import org.rusherhack.client.api.events.render.EventRenderEntity;
 import org.rusherhack.client.api.feature.module.ModuleCategory;
 import org.rusherhack.client.api.feature.module.ToggleableModule;
 import org.rusherhack.client.api.render.IRenderer2D;
@@ -37,12 +38,9 @@ public class NoWalkAnimationModule extends ToggleableModule {
     }
 
     @Subscribe
-    private void onRender3D(EventRender3D event) {
-        for(Entity entity : WorldUtils.getEntities()) {
-            if(!(entity instanceof Player player)) {
-                continue;
-            }
-
+    private void onRenderEntity(EventRenderEntity event) {
+        final Entity entity = event.getEntity();
+        if((entity instanceof Player player)) {
             player.walkAnimation.setSpeed(0f);
             player.walkAnimation.update(0f, event.getPartialTicks());
         }
