@@ -1,12 +1,13 @@
 {
-  "Plugin-Class": "org.example.ExamplePlugin",
-  "Name": "Example Plugin",
-  "Version": "${plugin_version}",
-  "Description": "Example rusherhack plugin",
+  "Plugin-Class": "me.eonexe.ExamplePlugin",
+  "Name": "NoWalkAnimations",
+  "Version": "0.1.0",
+  "Description": "Rusher plugin to disable the walking animation!",
   "Authors": [
-    "John200410"
+    "John200410",
+    "Eonexe"
   ],
   "Minecraft-Versions": [
-    "1.20.1"
+    "1.20.4"
   ]
 }
