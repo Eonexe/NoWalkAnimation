@@ -18,8 +18,8 @@ configurations {
 repositories {
 	maven {
 		name = 'rusherhack'
-		url = 'https://maven.rusherhack.org/releases'
-// 		url = 'https://maven.rusherhack.org/snapshots'
+//		url = 'https://maven.rusherhack.org/releases'
+		url = 'https://maven.rusherhack.org/snapshots'
 	}
 	maven {
 		name = 'ParchmentMC'
@@ -58,12 +58,12 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 17
+	it.options.release = 21
 }
 
 java {
-	sourceCompatibility = JavaVersion.VERSION_17
-	targetCompatibility = JavaVersion.VERSION_17
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
 }
 
 jar {
