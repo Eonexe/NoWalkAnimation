@@ -26,11 +26,6 @@ import org.rusherhack.core.utils.ColorUtils;
 
 import java.awt.*;
 
-/**
- * Example rusherhack module
- *
- * @author John200410
- */
 public class NoWalkAnimationModule extends ToggleableModule {
 
     public NoWalkAnimationModule() {
